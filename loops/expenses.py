@@ -1,6 +1,11 @@
-expenses = [10.50, 8, 5, 20, 5, 3, 7]
-total = sum(expenses)
+total = 0
+expenses = []
+num_expenses = int(input('Enter # of expenses:'))
 
+for i in range(0, num_expenses):
+    expenses.append(float(input('Enter an expense:')))
+
+total = sum(expenses)
 
 
 print('You spent $', total, ' on lunch', sep='')
